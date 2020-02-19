@@ -1,0 +1,8 @@
+<h1>Je suis dans <%=@restaurant.name %></h1>
+
+
+<p><% @reviews.each do |rev| %></p>
+<p><%= rev.content %></p>
+<p><% end %></p>
+
+<p><%= link_to "back", restaurants_path %></p>
